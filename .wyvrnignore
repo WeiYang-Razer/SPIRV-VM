@@ -1,0 +1,35 @@
+# ── Version control / editor ──────────────────────────────────────────────────
+.git/
+.gitignore
+.gitattributes
+.gitmodules
+.github/
+.vscode/
+.idea/
+
+# ── Local build output + wyvrnpm-generated files ──────────────────────────────
+build/
+wyvrn_internal/
+wyvrn.lock
+CMakePresets.json
+CMakeUserPresets.json
+*.tmp
+*.log
+
+# ── StaticLib extras: tests, examples, CI noise ───────────────────────────────
+example/
+examples/
+test/
+tests/
+doc/
+docs/
+docker/
+bin/
+appveyor.yml
+.travis.yml
+
+# ── Precompiled / intermediate shader artefacts (not needed by consumers) ─────
+*.spv
+*.spvasm
+*.hlsl
+*.glsl

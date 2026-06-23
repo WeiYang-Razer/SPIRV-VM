@@ -9,3 +9,15 @@ cmake_install.cmake
 Makefile
 compile.sh
 libSPIRVVM.a
+
+# wyvrnpm — do NOT commit these generated/local files
+wyvrn_internal/
+CMakePresets.json
+CMakeUserPresets.json
+wyvrn.local.json
+build/
+output/
+*.zip
+*.tmp
+*.log
+# DO commit wyvrn.lock — it pins exact resolved versions for reproducibility

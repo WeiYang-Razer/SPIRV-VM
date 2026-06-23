@@ -1,0 +1,24 @@
+{
+  "name":          "SPIRV-VM",
+  "version":       "1.0.0.0",
+  "schemaVersion": 2,
+  "description":   "SPIR-V virtual machine — execute HLSL/GLSL shaders compiled to SPIR-V. Written in C, no dependencies, MIT licensed.",
+  "kind":          "StaticLib",
+
+  "compatibility": {
+    "compiler.cppstd":  "lte",
+    "compiler.runtime": "exact"
+  },
+
+  "build": {
+    "system":       "cmake",
+    "generator":    ["Ninja Multi-Config", "Visual Studio 17 2022"],
+    "configs":      ["Debug", "Release", "RelWithDebInfo", "MinSizeRel"],
+    "configure":    [],
+    "buildArgs":    ["--parallel"],
+    "installDir":   "install",
+    "sourceSubdir": "."
+  },
+
+  "dependencies": {}
+}
