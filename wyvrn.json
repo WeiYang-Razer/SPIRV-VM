@@ -1,12 +1,16 @@
 {
   "name":          "SPIRV-VM",
-  "version":       "1.0.0.0",
+  "version":       "1.1.0.0",
   "schemaVersion": 2,
   "description":   "SPIR-V virtual machine — execute HLSL/GLSL shaders compiled to SPIR-V. Written in C, no dependencies, MIT licensed.",
   "kind":          "StaticLib",
-
+  
   "compatibility": {
-    "compiler.cppstd":  "lte",
+    "os": "exact",
+    "arch": "exact",
+    "compiler": "exact",
+    "compiler.version": "exact-or-newer",
+    "compiler.cppstd": "exact-or-newer",
     "compiler.runtime": "exact"
   },
 
